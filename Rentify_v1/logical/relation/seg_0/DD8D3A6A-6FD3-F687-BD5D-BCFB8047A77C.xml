@@ -1,0 +1,18 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="Relation_19" directorySegmentName="seg_0" id="DD8D3A6A-6FD3-F687-BD5D-BCFB8047A77C">
+<createdBy>User</createdBy>
+<createdTime>2025-10-05 13:58:12 UTC</createdTime>
+<ownerDesignName>Rentify_v1</ownerDesignName>
+<engineerTo>
+<item key="ACFD8AD0-FCD4-F6E8-FC10-4DF528DD9616" value="true"/>
+</engineerTo>
+<identifying>false</identifying>
+<optionalSource>false</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>3271D74C-77AE-8A14-20DF-C8ED646B78C2</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>787EE96F-4F27-A7E9-05BC-C7D25EAF0C89</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>
