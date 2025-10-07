@@ -15,49 +15,101 @@
 <minVolumes>0</minVolumes>
 <normalForm>Third</normalForm>
 <attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
-<Attribute name="id" id="82EB2166-3042-80D4-90C8-7F895C155681">
+<Attribute name="id_detalle_arriendo" id="82EB2166-3042-80D4-90C8-7F895C155681">
 <createdBy>User</createdBy>
 <createdTime>2025-10-05 03:02:37 UTC</createdTime>
 <ownerDesignName>Rentify_v1</ownerDesignName>
 <engineerTo>
 <item key="ACFD8AD0-FCD4-F6E8-FC10-4DF528DD9616" value="true"/>
 </engineerTo>
-<nullsAllowed>true</nullsAllowed>
-<use>0</use>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<ownDataTypeParameters>,3,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="cantidad" id="9D044C5D-106A-D862-A2D4-08EC9E046395">
+<Attribute name="cantidad_detalle_arriendo" id="9D044C5D-106A-D862-A2D4-08EC9E046395">
 <createdBy>User</createdBy>
 <createdTime>2025-10-05 03:02:40 UTC</createdTime>
 <ownerDesignName>Rentify_v1</ownerDesignName>
 <engineerTo>
 <item key="ACFD8AD0-FCD4-F6E8-FC10-4DF528DD9616" value="true"/>
 </engineerTo>
-<nullsAllowed>true</nullsAllowed>
-<use>0</use>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>8</dataTypePrecision>
+<ownDataTypeParameters>,8,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="precio_unitario" id="99BC0FD3-4366-4342-0576-D0175B0A13F4">
+<Attribute name="precio_unitario_arriendo" id="99BC0FD3-4366-4342-0576-D0175B0A13F4">
 <createdBy>User</createdBy>
 <createdTime>2025-10-05 03:04:24 UTC</createdTime>
 <ownerDesignName>Rentify_v1</ownerDesignName>
 <engineerTo>
 <item key="ACFD8AD0-FCD4-F6E8-FC10-4DF528DD9616" value="true"/>
 </engineerTo>
-<nullsAllowed>true</nullsAllowed>
-<use>0</use>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>8</dataTypePrecision>
+<ownDataTypeParameters>,8,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="subtotal" id="1A22FEA9-034A-3FD9-DDF0-5AE856D2ECC8">
+<Attribute name="subtotal_detalle_arriendo" id="1A22FEA9-034A-3FD9-DDF0-5AE856D2ECC8">
 <createdBy>User</createdBy>
 <createdTime>2025-10-05 03:04:34 UTC</createdTime>
 <ownerDesignName>Rentify_v1</ownerDesignName>
 <engineerTo>
 <item key="ACFD8AD0-FCD4-F6E8-FC10-4DF528DD9616" value="true"/>
 </engineerTo>
-<nullsAllowed>true</nullsAllowed>
-<use>0</use>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>9</dataTypePrecision>
+<ownDataTypeParameters>,9,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id_arriendos" id="9A401C71-A607-239A-478D-2043683A40B9">
+<createdBy>User</createdBy>
+<createdTime>2025-10-06 17:01:49 UTC</createdTime>
+<generatorID>CB807F4B-589E-216C-88EB-113E23138E26</generatorID>
+<ownerDesignName>Rentify_v1</ownerDesignName>
+<engineerTo>
+<item key="ACFD8AD0-FCD4-F6E8-FC10-4DF528DD9616" value="true"/>
+</engineerTo>
+<referedAttribute>CA45EBCB-981F-3E63-6798-7A9D75264885</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id_productos" id="A1203DDF-9A88-8593-74ED-C4F291F71072">
+<createdBy>User</createdBy>
+<createdTime>2025-10-06 17:09:45 UTC</createdTime>
+<generatorID>DD8D3A6A-6FD3-F687-BD5D-BCFB8047A77C</generatorID>
+<ownerDesignName>Rentify_v1</ownerDesignName>
+<engineerTo>
+<item key="ACFD8AD0-FCD4-F6E8-FC10-4DF528DD9616" value="true"/>
+</engineerTo>
+<referedAttribute>8E82A1BE-9CDC-43BF-6BEA-EC4A4D805FE3</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
 </attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="DE585300-B50C-F09B-D588-FDE1008F5924" name="detalle_arriendo PK">
+<createdBy>User</createdBy>
+<createdTime>2025-10-06 17:11:18 UTC</createdTime>
+<ownerDesignName>Rentify_v1</ownerDesignName>
+<engineerTo>
+<item key="ACFD8AD0-FCD4-F6E8-FC10-4DF528DD9616" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>82EB2166-3042-80D4-90C8-7F895C155681</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
 </Entity>

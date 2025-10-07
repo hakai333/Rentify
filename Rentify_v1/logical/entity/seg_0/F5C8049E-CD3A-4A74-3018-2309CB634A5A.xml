@@ -15,16 +15,18 @@
 <minVolumes>0</minVolumes>
 <normalForm>Third</normalForm>
 <attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
-<Attribute name="id" id="6ED9EA76-11FC-8673-F1F0-BC97548EC9C5">
+<Attribute name="id_tipo_evento" id="6ED9EA76-11FC-8673-F1F0-BC97548EC9C5">
 <createdBy>User</createdBy>
 <createdTime>2025-10-05 03:11:56 UTC</createdTime>
 <ownerDesignName>Rentify_v1</ownerDesignName>
 <engineerTo>
 <item key="ACFD8AD0-FCD4-F6E8-FC10-4DF528DD9616" value="true"/>
 </engineerTo>
-<nullsAllowed>true</nullsAllowed>
-<use>0</use>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<ownDataTypeParameters>,3,</ownDataTypeParameters>
 </Attribute>
 <Attribute name="nombre_evento" id="8FA95C8E-943D-160B-A707-E10C8A8F0BA9">
 <createdBy>User</createdBy>
@@ -33,11 +35,13 @@
 <engineerTo>
 <item key="ACFD8AD0-FCD4-F6E8-FC10-4DF528DD9616" value="true"/>
 </engineerTo>
-<nullsAllowed>true</nullsAllowed>
-<use>0</use>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50 CHAR</dataTypeSize>
+<ownDataTypeParameters>50 CHAR,,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="descripcion" id="C48B170A-4A82-0985-5451-C91C31E77B99">
+<Attribute name="descripcion_tipo_evento" id="C48B170A-4A82-0985-5451-C91C31E77B99">
 <createdBy>User</createdBy>
 <createdTime>2025-10-05 03:12:13 UTC</createdTime>
 <ownerDesignName>Rentify_v1</ownerDesignName>
@@ -45,8 +49,25 @@
 <item key="ACFD8AD0-FCD4-F6E8-FC10-4DF528DD9616" value="true"/>
 </engineerTo>
 <nullsAllowed>true</nullsAllowed>
-<use>0</use>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100 CHAR</dataTypeSize>
+<ownDataTypeParameters>100 CHAR,,</ownDataTypeParameters>
 </Attribute>
 </attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="444D4894-FF55-B3F8-8A71-1C69B5077480" name="tipo_evento PK">
+<createdBy>User</createdBy>
+<createdTime>2025-10-06 16:58:18 UTC</createdTime>
+<ownerDesignName>Rentify_v1</ownerDesignName>
+<engineerTo>
+<item key="ACFD8AD0-FCD4-F6E8-FC10-4DF528DD9616" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>6ED9EA76-11FC-8673-F1F0-BC97548EC9C5</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
 </Entity>

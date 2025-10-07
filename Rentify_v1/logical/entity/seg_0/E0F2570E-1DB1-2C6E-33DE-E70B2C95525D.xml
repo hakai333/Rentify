@@ -15,16 +15,18 @@
 <minVolumes>0</minVolumes>
 <normalForm>Third</normalForm>
 <attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
-<Attribute name="id" id="462884C4-3571-FFEB-8D53-011EFC810EE9">
+<Attribute name="id_notificaciones" id="462884C4-3571-FFEB-8D53-011EFC810EE9">
 <createdBy>User</createdBy>
 <createdTime>2025-10-05 03:13:17 UTC</createdTime>
 <ownerDesignName>Rentify_v1</ownerDesignName>
 <engineerTo>
 <item key="ACFD8AD0-FCD4-F6E8-FC10-4DF528DD9616" value="true"/>
 </engineerTo>
-<nullsAllowed>true</nullsAllowed>
-<use>0</use>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<ownDataTypeParameters>,3,</ownDataTypeParameters>
 </Attribute>
 <Attribute name="titulo" id="E7D092A2-AEA7-9D31-88F2-300FF5A8036F">
 <createdBy>User</createdBy>
@@ -33,9 +35,11 @@
 <engineerTo>
 <item key="ACFD8AD0-FCD4-F6E8-FC10-4DF528DD9616" value="true"/>
 </engineerTo>
-<nullsAllowed>true</nullsAllowed>
-<use>0</use>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50 CHAR</dataTypeSize>
+<ownDataTypeParameters>50 CHAR,,</ownDataTypeParameters>
 </Attribute>
 <Attribute name="mensaje" id="D1A4FBDE-45E8-4351-78FF-0ABB60ACEB3F">
 <createdBy>User</createdBy>
@@ -44,9 +48,11 @@
 <engineerTo>
 <item key="ACFD8AD0-FCD4-F6E8-FC10-4DF528DD9616" value="true"/>
 </engineerTo>
-<nullsAllowed>true</nullsAllowed>
-<use>0</use>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100 CHAR</dataTypeSize>
+<ownDataTypeParameters>100 CHAR,,</ownDataTypeParameters>
 </Attribute>
 <Attribute name="tipo" id="273597D5-8E23-9079-C117-91ADBE60E8BB">
 <createdBy>User</createdBy>
@@ -55,9 +61,11 @@
 <engineerTo>
 <item key="ACFD8AD0-FCD4-F6E8-FC10-4DF528DD9616" value="true"/>
 </engineerTo>
-<nullsAllowed>true</nullsAllowed>
-<use>0</use>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50 CHAR</dataTypeSize>
+<ownDataTypeParameters>50 CHAR,,</ownDataTypeParameters>
 </Attribute>
 <Attribute name="leida" id="EFE6D57D-455C-8C1C-50F6-EB10434A90D0">
 <createdBy>User</createdBy>
@@ -66,9 +74,11 @@
 <engineerTo>
 <item key="ACFD8AD0-FCD4-F6E8-FC10-4DF528DD9616" value="true"/>
 </engineerTo>
-<nullsAllowed>true</nullsAllowed>
-<use>0</use>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50 CHAR</dataTypeSize>
+<ownDataTypeParameters>50 CHAR,,</ownDataTypeParameters>
 </Attribute>
 <Attribute name="fecha_creacion" id="51E90414-ED02-07FC-222C-99BBB4E46DF5">
 <createdBy>User</createdBy>
@@ -77,9 +87,39 @@
 <engineerTo>
 <item key="ACFD8AD0-FCD4-F6E8-FC10-4DF528DD9616" value="true"/>
 </engineerTo>
-<nullsAllowed>true</nullsAllowed>
-<use>0</use>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id_usuario" id="66D21D46-0CE0-ADEF-52C5-816AD3FB3CC8">
+<createdBy>User</createdBy>
+<createdTime>2025-10-06 16:53:32 UTC</createdTime>
+<generatorID>1B176BB3-6B14-896D-9EDC-B611F000477A</generatorID>
+<ownerDesignName>Rentify_v1</ownerDesignName>
+<engineerTo>
+<item key="ACFD8AD0-FCD4-F6E8-FC10-4DF528DD9616" value="true"/>
+</engineerTo>
+<referedAttribute>9284C08C-6E42-46C8-80A5-221500204023</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
 </attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="863EADD9-B7D0-4E4E-4BB7-ED396EF3DE9D" name="notificaciones PK">
+<createdBy>User</createdBy>
+<createdTime>2025-10-06 16:51:07 UTC</createdTime>
+<ownerDesignName>Rentify_v1</ownerDesignName>
+<engineerTo>
+<item key="ACFD8AD0-FCD4-F6E8-FC10-4DF528DD9616" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>462884C4-3571-FFEB-8D53-011EFC810EE9</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
 </Entity>

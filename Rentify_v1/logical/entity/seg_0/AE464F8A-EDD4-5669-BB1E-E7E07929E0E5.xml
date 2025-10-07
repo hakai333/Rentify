@@ -1,7 +1,7 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="84C20D7F-77B8-79ED-4FAA-FEAAAF08B546" name="bodega">
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="AE464F8A-EDD4-5669-BB1E-E7E07929E0E5" name="region">
 <createdBy>User</createdBy>
-<createdTime>2025-10-05 14:20:45 UTC</createdTime>
+<createdTime>2025-10-06 16:42:28 UTC</createdTime>
 <ownerDesignName>Rentify_v1</ownerDesignName>
 <engineerTo>
 <item key="ACFD8AD0-FCD4-F6E8-FC10-4DF528DD9616" value="true"/>
@@ -15,9 +15,9 @@
 <minVolumes>0</minVolumes>
 <normalForm>Third</normalForm>
 <attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
-<Attribute name="id_bodega" id="E3E74AE2-0CD6-2A26-650E-221DA98165E2">
+<Attribute name="id_region" id="8C35444D-689C-C5AB-CE8C-EEBCAC03912D">
 <createdBy>User</createdBy>
-<createdTime>2025-10-05 14:20:49 UTC</createdTime>
+<createdTime>2025-10-06 16:42:36 UTC</createdTime>
 <ownerDesignName>Rentify_v1</ownerDesignName>
 <engineerTo>
 <item key="ACFD8AD0-FCD4-F6E8-FC10-4DF528DD9616" value="true"/>
@@ -25,12 +25,12 @@
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
-<dataTypePrecision>3</dataTypePrecision>
-<ownDataTypeParameters>,3,</ownDataTypeParameters>
+<dataTypePrecision>2</dataTypePrecision>
+<ownDataTypeParameters>,2,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="nombre_bodega" id="2B53186C-2D60-9DAB-B9F2-E2CE29F5A986">
+<Attribute name="nombre_region" id="475792BC-B61E-3747-9078-33CE86783B7E">
 <createdBy>User</createdBy>
-<createdTime>2025-10-05 14:20:52 UTC</createdTime>
+<createdTime>2025-10-06 16:43:10 UTC</createdTime>
 <ownerDesignName>Rentify_v1</ownerDesignName>
 <engineerTo>
 <item key="ACFD8AD0-FCD4-F6E8-FC10-4DF528DD9616" value="true"/>
@@ -38,48 +38,35 @@
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT024</logicalDatatype>
-<dataTypeSize>50 CHAR</dataTypeSize>
-<ownDataTypeParameters>50 CHAR,,</ownDataTypeParameters>
+<dataTypeSize>70 CHAR</dataTypeSize>
+<ownDataTypeParameters>70 CHAR,,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="direccion_nodega" id="E75D7F3E-FC36-58C4-17FB-A99FA29543C7">
+<Attribute name="descripcion_region" id="7283C6C0-E8FE-C6F9-2432-F63A348B9BD0">
 <createdBy>User</createdBy>
-<createdTime>2025-10-05 14:21:01 UTC</createdTime>
-<commentInRDBMS><![CDATA[puede quedar pendiente con la tabla direccion que ya existe]]></commentInRDBMS>
+<createdTime>2025-10-06 16:43:29 UTC</createdTime>
 <ownerDesignName>Rentify_v1</ownerDesignName>
 <engineerTo>
 <item key="ACFD8AD0-FCD4-F6E8-FC10-4DF528DD9616" value="true"/>
 </engineerTo>
+<nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT024</logicalDatatype>
-<dataTypeSize>50 CHAR</dataTypeSize>
-<ownDataTypeParameters>50 CHAR,,</ownDataTypeParameters>
-</Attribute>
-<Attribute name="telefono_bodega" id="7B27B864-AD18-98CB-1E92-E9463D12F6BA">
-<createdBy>User</createdBy>
-<createdTime>2025-10-05 14:23:53 UTC</createdTime>
-<ownerDesignName>Rentify_v1</ownerDesignName>
-<engineerTo>
-<item key="ACFD8AD0-FCD4-F6E8-FC10-4DF528DD9616" value="true"/>
-</engineerTo>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT019</logicalDatatype>
-<dataTypePrecision>9</dataTypePrecision>
-<ownDataTypeParameters>,9,</ownDataTypeParameters>
+<dataTypeSize>100 CHAR</dataTypeSize>
+<ownDataTypeParameters>100 CHAR,,</ownDataTypeParameters>
 </Attribute>
 </attributes>
 <identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
-<identifier id="399CA4A6-6CD5-3652-5E90-EF91A6F27D21" name="bodega PK">
+<identifier id="4B65BBDB-CE43-27A2-F802-90F5CD759AC9" name="region PK">
 <createdBy>User</createdBy>
-<createdTime>2025-10-06 17:04:56 UTC</createdTime>
+<createdTime>2025-10-06 16:43:09 UTC</createdTime>
 <ownerDesignName>Rentify_v1</ownerDesignName>
 <engineerTo>
 <item key="ACFD8AD0-FCD4-F6E8-FC10-4DF528DD9616" value="true"/>
 </engineerTo>
 <pk>true</pk>
 <usedAttributes>
-<attributeRef>E3E74AE2-0CD6-2A26-650E-221DA98165E2</attributeRef>
+<attributeRef>8C35444D-689C-C5AB-CE8C-EEBCAC03912D</attributeRef>
 </usedAttributes>
 </identifier>
 </identifiers>

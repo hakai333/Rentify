@@ -15,38 +15,58 @@
 <minVolumes>0</minVolumes>
 <normalForm>Third</normalForm>
 <attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
-<Attribute name="id" id="62FFCFBC-8210-1AB6-84B7-3567ECB47985">
+<Attribute name="id_categorias" id="62FFCFBC-8210-1AB6-84B7-3567ECB47985">
 <createdBy>User</createdBy>
 <createdTime>2025-10-05 02:50:06 UTC</createdTime>
 <ownerDesignName>Rentify_v1</ownerDesignName>
 <engineerTo>
 <item key="ACFD8AD0-FCD4-F6E8-FC10-4DF528DD9616" value="true"/>
 </engineerTo>
-<nullsAllowed>true</nullsAllowed>
-<use>0</use>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<ownDataTypeParameters>,3,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="nombre" id="252FE0D5-438A-58DF-8ED3-8AB8A09247BD">
+<Attribute name="nombre_categoria" id="252FE0D5-438A-58DF-8ED3-8AB8A09247BD">
 <createdBy>User</createdBy>
 <createdTime>2025-10-05 02:50:09 UTC</createdTime>
 <ownerDesignName>Rentify_v1</ownerDesignName>
 <engineerTo>
 <item key="ACFD8AD0-FCD4-F6E8-FC10-4DF528DD9616" value="true"/>
 </engineerTo>
-<nullsAllowed>true</nullsAllowed>
-<use>0</use>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30 CHAR</dataTypeSize>
+<ownDataTypeParameters>30 CHAR,,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="descripcion" id="C1103778-A42F-765C-9035-9D8782E6CF85">
+<Attribute name="descripcion_categoria" id="C1103778-A42F-765C-9035-9D8782E6CF85">
 <createdBy>User</createdBy>
 <createdTime>2025-10-05 02:50:27 UTC</createdTime>
 <ownerDesignName>Rentify_v1</ownerDesignName>
 <engineerTo>
 <item key="ACFD8AD0-FCD4-F6E8-FC10-4DF528DD9616" value="true"/>
 </engineerTo>
-<nullsAllowed>true</nullsAllowed>
-<use>0</use>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100 CHAR</dataTypeSize>
+<ownDataTypeParameters>100 CHAR,,</ownDataTypeParameters>
 </Attribute>
 </attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="FD46E053-C0AA-96F4-3251-A35538E7B46D" name="categorias PK">
+<createdBy>User</createdBy>
+<createdTime>2025-10-06 17:13:44 UTC</createdTime>
+<ownerDesignName>Rentify_v1</ownerDesignName>
+<engineerTo>
+<item key="ACFD8AD0-FCD4-F6E8-FC10-4DF528DD9616" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>62FFCFBC-8210-1AB6-84B7-3567ECB47985</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
 </Entity>

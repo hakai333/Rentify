@@ -1,7 +1,7 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="208BAB8C-C130-2ECF-A39B-AE2B0DFFB4A8" name="usuarios">
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="D733C1D5-4329-26B3-9833-3D8627B58056" name="comuna">
 <createdBy>User</createdBy>
-<createdTime>2025-10-05 02:47:59 UTC</createdTime>
+<createdTime>2025-10-06 16:40:58 UTC</createdTime>
 <ownerDesignName>Rentify_v1</ownerDesignName>
 <engineerTo>
 <item key="ACFD8AD0-FCD4-F6E8-FC10-4DF528DD9616" value="true"/>
@@ -15,9 +15,9 @@
 <minVolumes>0</minVolumes>
 <normalForm>Third</normalForm>
 <attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
-<Attribute name="id_usuario" id="9284C08C-6E42-46C8-80A5-221500204023">
+<Attribute name="id_comuna" id="454F96DD-C3B4-12EA-D361-FCD978FFD6A8">
 <createdBy>User</createdBy>
-<createdTime>2025-10-05 02:48:14 UTC</createdTime>
+<createdTime>2025-10-06 16:41:04 UTC</createdTime>
 <ownerDesignName>Rentify_v1</ownerDesignName>
 <engineerTo>
 <item key="ACFD8AD0-FCD4-F6E8-FC10-4DF528DD9616" value="true"/>
@@ -28,22 +28,9 @@
 <dataTypePrecision>3</dataTypePrecision>
 <ownDataTypeParameters>,3,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="user" id="8FB50E72-8ED7-C5E3-544F-382C63196A38">
+<Attribute name="nombre_comuna" id="E202B9CC-D2C1-B9E0-42CF-DC4D82FDA7E4">
 <createdBy>User</createdBy>
-<createdTime>2025-10-05 02:48:17 UTC</createdTime>
-<ownerDesignName>Rentify_v1</ownerDesignName>
-<engineerTo>
-<item key="ACFD8AD0-FCD4-F6E8-FC10-4DF528DD9616" value="true"/>
-</engineerTo>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT024</logicalDatatype>
-<dataTypeSize>100 CHAR</dataTypeSize>
-<ownDataTypeParameters>100 CHAR,,</ownDataTypeParameters>
-</Attribute>
-<Attribute name="pass" id="DC888697-EA9B-D993-90DD-CA56C306E4CE">
-<createdBy>User</createdBy>
-<createdTime>2025-10-05 02:48:22 UTC</createdTime>
+<createdTime>2025-10-06 16:41:31 UTC</createdTime>
 <ownerDesignName>Rentify_v1</ownerDesignName>
 <engineerTo>
 <item key="ACFD8AD0-FCD4-F6E8-FC10-4DF528DD9616" value="true"/>
@@ -54,48 +41,48 @@
 <dataTypeSize>50 CHAR</dataTypeSize>
 <ownDataTypeParameters>50 CHAR,,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="id_persona" id="AD593E17-9941-F283-637B-1FA8A0B4516E">
+<Attribute name="descripcion_comuna" id="2F5BA876-761A-7457-8073-D357D5D8BBB9">
 <createdBy>User</createdBy>
-<createdTime>2025-10-06 16:23:09 UTC</createdTime>
-<generatorID>063F4967-EA8F-449C-C953-70DB54656601</generatorID>
+<createdTime>2025-10-06 16:41:53 UTC</createdTime>
+<comment><![CDATA[opcional]]></comment>
 <ownerDesignName>Rentify_v1</ownerDesignName>
 <engineerTo>
 <item key="ACFD8AD0-FCD4-F6E8-FC10-4DF528DD9616" value="true"/>
 </engineerTo>
-<referedAttribute>1BA8DD02-4554-5861-97EE-8F226B9E443B</referedAttribute>
+<nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
-<logicalDatatype>LOGDT019</logicalDatatype>
-<dataTypePrecision>10</dataTypePrecision>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100 CHAR</dataTypeSize>
+<ownDataTypeParameters>100 CHAR,,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="id_roles" id="FEE530A4-31F1-2163-B9C1-18C4E2D7D160">
+<Attribute name="id_region" id="7C56F7D0-82CF-85CF-EBA2-92BEA2F8B6EB">
 <createdBy>User</createdBy>
-<createdTime>2025-10-06 16:54:46 UTC</createdTime>
-<generatorID>F938A5DE-C80A-4994-3397-44101AEE47BA</generatorID>
+<createdTime>2025-10-06 16:44:36 UTC</createdTime>
+<generatorID>D91343D8-30DB-E7BA-05EB-9AF1C84130DD</generatorID>
 <ownerDesignName>Rentify_v1</ownerDesignName>
 <engineerTo>
 <item key="ACFD8AD0-FCD4-F6E8-FC10-4DF528DD9616" value="true"/>
 </engineerTo>
-<referedAttribute>7E8E7EF9-5A9D-DD81-418E-879BD70A0EA8</referedAttribute>
+<referedAttribute>8C35444D-689C-C5AB-CE8C-EEBCAC03912D</referedAttribute>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
-<dataTypePrecision>3</dataTypePrecision>
+<dataTypePrecision>2</dataTypePrecision>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
 </attributes>
 <identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
-<identifier id="F2228C9B-0608-7C33-49A7-CFA1A861725C" name="usuarios PK">
+<identifier id="889937B4-F87F-1A65-FC45-E7F34602F0DE" name="comuna PK">
 <createdBy>User</createdBy>
-<createdTime>2025-10-06 16:52:54 UTC</createdTime>
+<createdTime>2025-10-06 16:41:27 UTC</createdTime>
 <ownerDesignName>Rentify_v1</ownerDesignName>
 <engineerTo>
 <item key="ACFD8AD0-FCD4-F6E8-FC10-4DF528DD9616" value="true"/>
 </engineerTo>
 <pk>true</pk>
 <usedAttributes>
-<attributeRef>9284C08C-6E42-46C8-80A5-221500204023</attributeRef>
+<attributeRef>454F96DD-C3B4-12EA-D361-FCD978FFD6A8</attributeRef>
 </usedAttributes>
 </identifier>
 </identifiers>
