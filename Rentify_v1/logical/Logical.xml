@@ -1,7 +1,0 @@
-<?xml version = '1.0' encoding = 'UTF-8'?>
-<LogicalDesign class="oracle.dbtools.crest.model.design.logical.LogicalDesign" name="Logical" id="6A49E0A1-5EF6-B99F-6F2F-43AF34D81169" mainViewID="22B9B6EC-82AD-6C72-CF0B-962975079DA5">
-<createdBy>User</createdBy>
-<createdTime>2025-10-05 02:42:42 UTC</createdTime>
-<ownerDesignName>Rentify_v1</ownerDesignName>
-<shouldBeOpen>false</shouldBeOpen>
-</LogicalDesign>
