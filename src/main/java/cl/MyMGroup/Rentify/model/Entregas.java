@@ -22,6 +22,7 @@ public class Entregas {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
+    private String direccion;
     private LocalDateTime fecha;
     private Boolean estado;
 
