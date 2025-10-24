@@ -5,13 +5,12 @@ import jakarta.persistence.Table;
 import jakarta.persistence.Id;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;;
-import lombok.AllArgsConstructor;
-import lombok.Data;
-import lombok.NoArgsConstructor;
+import lombok.*;
+
+import java.time.LocalDateTime;
 
 @Entity
 @Table(name = "usuarios")
-@Data
 @AllArgsConstructor
 @NoArgsConstructor
 public class Usuario {
@@ -19,7 +18,9 @@ public class Usuario {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
+    private String nombre;
     private String correo;
     private String contrasena;
-    private String rol;
+    private String telefono;
+    private LocalDateTime fecha_creacion;
 }
