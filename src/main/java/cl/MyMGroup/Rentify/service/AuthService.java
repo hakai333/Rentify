@@ -26,16 +26,25 @@ public class AuthService {
     }
 
     public AuthResponse login(LoginRequest request) {
-        Optional<Usuario> usuarioOpt = usuarioRepository.findByEmail(request.getEmail());
 
-        if (usuarioOpt.isEmpty() || !usuarioOpt.get().getPassword().equals(request.getPassword())) {
-            return new AuthResponse("Credenciales inválidas", null);
-        }
+    Optional<Usuario> usuarioOpt = usuarioRepository.findByEmail(request.getEmail());
 
-        // Simulamos token (en producción usar JWT)
-        String fakeToken = "token_" + usuarioOpt.get().getId();
-        return new AuthResponse("Login exitoso", fakeToken);
+    if (usuarioOpt.isEmpty() || 
+        !usuarioOpt.get().getPassword().equals(request.getPassword())) {
+
+        return new AuthResponse("Credenciales inválidas", null, null);
     }
+
+    Usuario usuario = usuarioOpt.get();
+
+    String fakeToken = "token_" + usuario.getId();
+
+    return new AuthResponse(
+            "Login exitoso",
+            fakeToken,
+            usuario
+    );
+}
 
 
 

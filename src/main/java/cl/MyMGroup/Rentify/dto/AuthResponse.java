@@ -1,14 +1,27 @@
 package cl.MyMGroup.Rentify.dto;
 
-public class AuthResponse {
-    private String message;
-    private String token;
+import cl.MyMGroup.Rentify.model.Usuario;
 
-    public AuthResponse(String message, String token) {
-        this.message = message;
+public class AuthResponse {
+    private String mensaje;
+    private String token;
+    private Usuario usuario;
+
+    public AuthResponse(String mensaje, String token, Usuario usuario) {
+        this.mensaje = mensaje;
         this.token = token;
+        this.usuario = usuario;
     }
 
-    public String getMessage() { return message; }
-    public String getToken() { return token; }
+    public String getMensaje() {
+        return mensaje;
+    }
+
+    public String getToken() {
+        return token;
+    }
+
+    public Usuario getUsuario() {
+        return usuario;
+    }
 }

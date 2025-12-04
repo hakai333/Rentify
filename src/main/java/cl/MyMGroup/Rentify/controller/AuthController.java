@@ -30,13 +30,16 @@ public class AuthController {
     }
 
     @PostMapping("/login")
-    public ResponseEntity<AuthResponse> login(@RequestBody LoginRequest request) {
-        AuthResponse response = authService.login(request);
-        if (response.getToken() == null) {
-            return ResponseEntity.status(401).body(response);
-        }
-        return ResponseEntity.ok(response);
+public ResponseEntity<AuthResponse> login(@RequestBody LoginRequest request) {
+
+    AuthResponse response = authService.login(request);
+
+    if (response.getToken() == null) {
+        return ResponseEntity.status(401).body(response);
     }
+
+    return ResponseEntity.ok(response);
+}
 
     @GetMapping("/test")
     public ResponseEntity<String> testConnection() {
